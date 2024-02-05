@@ -53,7 +53,7 @@ const getAllProducts = async (req, res) => {
 
   if (fields) {
     const fieldsList = fields.split(',').join(' ');
-    result = result.select(fieldsList);
+   result = result.select(fieldsList);
   }
   const page = Number(req.query.page) || 1;
   const limit = Number(req.query.limit) || 10;
